@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 export const routes: Routes = [
     {
@@ -8,9 +9,13 @@ export const routes: Routes = [
     },
     {
         path: '',
-        //component: HomeComponent,
-        data: { title: 'Home' },
+        component:  MainLayoutComponent,
         children: [
+            {
+                path: 'home',
+                loadChildren: () => import('./features/static/routes').then((m) => m.routes)
+            },
+            
         ]
     }
 ];
