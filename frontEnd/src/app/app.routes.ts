@@ -7,7 +7,7 @@ export const routes: Routes = [
         component:  MainLayoutComponent,
         children: [
             {
-                path: 'home',
+                path: '',
                 loadChildren: () => import('./features/static/routes').then((m) => m.routes)
             },
             
