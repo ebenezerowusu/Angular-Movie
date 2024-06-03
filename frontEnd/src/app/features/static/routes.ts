@@ -8,7 +8,6 @@ export const routes: Routes = [
   {
     path: HOME_PATH,
     loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
-
   },
   {
     path: ABOUT_PATH,
@@ -24,6 +23,5 @@ export const routes: Routes = [
       title: 'Contact Us'
     }
   }
-
 ];
 

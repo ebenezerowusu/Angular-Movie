@@ -7,11 +7,12 @@ export const routes: Routes = [
         component:  MainLayoutComponent,
         children: [
             {
-                path: '',
+                path: 'home',
                 loadChildren: () => import('./features/static/routes').then((m) => m.routes)
             },
             
         ]
+
     },
     {
         path: '**',
