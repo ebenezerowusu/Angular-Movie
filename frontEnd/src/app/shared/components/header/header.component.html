@@ -6,9 +6,9 @@
       </a>
 
       <ul class="nav nav-pills text-white">
-        <li class="nav-item"><a routerLink='/home' class="nav-link text-white">Home</a></li>
-        <li class="nav-item"><a routerLink='/about' class="nav-link text-white">About Us</a></li>
-        <li class="nav-item"><a routerLink='/contact' class="nav-link text-white">Contact Us</a></li>
+        <li class="nav-item"><a [routerLink]="routeConstants.HOME_ROUTE" class="nav-link text-white">Home</a></li>
+        <li class="nav-item"><a [routerLink]="routeConstants.ABOUT_PATH" class="nav-link text-white">About Us</a></li>
+        <li class="nav-item"><a [routerLink]="routeConstants.CONTACT_PATH" class="nav-link text-white">Contact Us</a></li>
       </ul>
     </header>
   </div>

@@ -1,5 +1,7 @@
+import { routes } from './../../../app.routes';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { RouteConstantsServiceService } from '../../../core/services/route-constants-service.service';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +12,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  
+  
+  constructor(public routeConstants: RouteConstantsServiceService){}
 
 }
